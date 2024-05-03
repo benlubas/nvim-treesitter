@@ -90,7 +90,7 @@ return {
   bash = {
     install_info = {
       files = { 'src/parser.c', 'src/scanner.c' },
-      revision = 'f8fb3274f72a30896075585b32b0c54cad65c086',
+      revision = 'v0.21.0',
       url = 'https://github.com/tree-sitter/tree-sitter-bash',
     },
     maintainers = { '@TravonteD' },
@@ -153,7 +153,7 @@ return {
   c = {
     install_info = {
       files = { 'src/parser.c' },
-      revision = '1aafaff4d26dac5a36dd3495be33e1c20161d761',
+      revision = 'v0.21.0',
       url = 'https://github.com/tree-sitter/tree-sitter-c',
     },
     maintainers = { '@amaanq' },
@@ -1248,7 +1248,7 @@ return {
   lua = {
     install_info = {
       files = { 'src/parser.c', 'src/scanner.c' },
-      revision = 'a24dab177e58c9c6832f96b9a73102a0cfbced4a',
+      revision = 'v0.1.0',
       url = 'https://github.com/tree-sitter-grammars/tree-sitter-lua',
     },
     maintainers = { '@muniftanjim' },
@@ -1306,7 +1306,7 @@ return {
     install_info = {
       files = { 'src/parser.c', 'src/scanner.c' },
       location = 'tree-sitter-markdown',
-      revision = '7fe453beacecf02c86f7736439f238f5bb8b5c9b',
+      revision = 'v0.2.3',
       url = 'https://github.com/tree-sitter-grammars/tree-sitter-markdown',
     },
     maintainers = { '@MDeiml' },
@@ -1318,7 +1318,7 @@ return {
     install_info = {
       files = { 'src/parser.c', 'src/scanner.c' },
       location = 'tree-sitter-markdown-inline',
-      revision = '7fe453beacecf02c86f7736439f238f5bb8b5c9b',
+      revision = 'v0.2.3',
       url = 'https://github.com/tree-sitter-grammars/tree-sitter-markdown',
     },
     maintainers = { '@MDeiml' },
@@ -1736,7 +1736,7 @@ return {
   python = {
     install_info = {
       files = { 'src/parser.c', 'src/scanner.c' },
-      revision = '71778c2a472ed00a64abf4219544edbf8e4b86d7',
+      revision = 'v0.21.0',
       url = 'https://github.com/tree-sitter/tree-sitter-python',
     },
     maintainers = { '@stsewd', '@theHamsta' },
@@ -1774,7 +1774,7 @@ return {
   query = {
     install_info = {
       files = { 'src/parser.c' },
-      revision = '608c01187fb9f525a1e4cf585bb63d73dea280b7',
+      revision = 'v0.2.1',
       url = 'https://github.com/tree-sitter-grammars/tree-sitter-query',
     },
     maintainers = { '@steelsojka' },
@@ -2013,7 +2013,7 @@ return {
   solidity = {
     install_info = {
       files = { 'src/parser.c' },
-      revision = 'fa5c61c7c5a2d9e8e99439e2cec90225f4acb86b',
+      revision = 'b5a23ead0f69d38b5c9a630f52f5c129132c16ed',
       url = 'https://github.com/JoranHonig/tree-sitter-solidity',
     },
     maintainers = { '@amaanq' },
@@ -2469,7 +2469,7 @@ return {
   vim = {
     install_info = {
       files = { 'src/parser.c', 'src/scanner.c' },
-      revision = 'b448ca63f972ade12c373c808acdd2bf972937db',
+      revision = 'v0.4.0',
       url = 'https://github.com/tree-sitter-grammars/tree-sitter-vim',
     },
     maintainers = { '@clason' },
@@ -2478,7 +2478,7 @@ return {
   vimdoc = {
     install_info = {
       files = { 'src/parser.c' },
-      revision = 'b711df784dd43d0a8ed8ddbfca0ddcc3239d94b4',
+      revision = 'v2.5.1',
       url = 'https://github.com/neovim/tree-sitter-vimdoc',
     },
     maintainers = { '@clason' },
