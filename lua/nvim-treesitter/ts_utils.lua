@@ -395,8 +395,30 @@ function M.swap_nodes(node_or_range1, node_or_range2, bufnr, cursor_to_second)
   local text1 = get_node_text(node_or_range1, bufnr)
   local text2 = get_node_text(node_or_range2, bufnr)
 
+  ---remove trailing blank lines from the text, and update the corresponding range appropriately
+  ---@param text string[]
+  ---@param range table
+  local function remove_trailing_blank_lines(text, range)
+    local end_line_offset = 0
+    while text[#text] == "" do
+      text[#text] = nil
+      end_line_offset = end_line_offset + 1
+    end
+    range["end"] = {
+      character = string.len(text[#text]),
+      line = range["end"].line - end_line_offset,
+    }
+    if #text == 1 then -- ie. start and end lines are equal
+      range["end"].character = range["end"].character + range.start.character
+    end
+  end
+
+  remove_trailing_blank_lines(text1, range1)
+  remove_trailing_blank_lines(text2, range2)
+
   local edit1 = { range = range1, newText = table.concat(text2, "\n") }
   local edit2 = { range = range2, newText = table.concat(text1, "\n") }
+
   vim.lsp.util.apply_text_edits({ edit1, edit2 }, bufnr, "utf-8")
 
   if cursor_to_second then
